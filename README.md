@@ -121,9 +121,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- CONTACT -->
 ## Contact
 
-Daryl Howard - [My LinkedIn Profile][linkedin-url]
+ Collins - [Linkedin Profile](https://www.linkedin.com/in/collinsikwueze/)
 
-Project Link: [https://github.com/UKIkarus/LearnToCloud](https://github.com/UKIkarus/LearnToCloud)
+Project Link: [LearntoCloud](https://github.com/bombidoski/LearnToCLoud)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
