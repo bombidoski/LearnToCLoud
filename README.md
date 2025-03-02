@@ -84,7 +84,7 @@ Feel free to dive in and give it a try yourself!
 - Git
 - Azure-CLI
 - Visual Studio Code
-- Markdown (Still learning!)
+- Markdown 
 - Terraform - IAC
 - WSL - (Windows Subsystems for Linux)
 
