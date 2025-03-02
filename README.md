@@ -30,7 +30,7 @@ A repository for documenting my journey through LTC
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/UKIkarus/LearnToCloud">
+  <a href="https://github.com/bombidoski/LearnToCLoud">
     <img src="https://raw.githubusercontent.com/learntocloud/learn-to-cloud/refs/heads/main/img/cropped.svg" alt="Logo" width="480">
   </a>
 <br />
@@ -42,9 +42,9 @@ A repository for documenting my journey through LTC
     A public repository aimed at documenting my progress through the cloud training resources available at <a href="https://learntocloud.guide">LearnToCloud.Guide</a>.
     <br />
     <br />
-    <a href="https://github.com/UKIkarus/LearnToCloud/issues">Report Bug</a>
+    <a href="https://github.com/bombidoski/LearnToCLoud/issues">Report Bug</a>
     ·
-    <a href="https://github.com/UKIkarus/LearnToCloud/issues">Request Feature</a>
+    <a href="https://github.com/bombidoski/LearnToCLoud/issues">Request Feature</a>
 </p>
 </div>
 <br />
@@ -101,7 +101,7 @@ To get started with LearnToCloud and the resources made available on their websi
 - Pass additional exams and earn certificates.
 - Build a portfolio of my successes.
 
-See the [open issues](https://github.com/UKIkarus/LearnToCloud/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/bombidoski/LearnToCLoud/issues) for a full list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
