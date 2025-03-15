@@ -11,7 +11,7 @@ cd ltc-linux-challenge/azure
 ```
 
 
-# Challenge 1:The Hidden File 
+# Challenge 1 : The Hidden File 
 
 **Objective:** Find a hidden file in the `ctf_challenges` directory and read its contents.
 
@@ -51,3 +51,20 @@ I used the ```find``` command to search for the file
 `cd /var/log
 ls -s
 tail -n 5 large_log_file.log`
+
+## Challenge 4: The User Detective
+
+**Objective:** Identify the user with UID 1002 and find the flag in their home directory.
+
+**Skills tested:**
+
+- Understanding user management in Linux
+- Reading the /etc/passwd file or using id command
+- Navigating to other users' home directories
+
+I used ```grep 1002 /etc/passwd``` to search for the UID 1002 in the /etc/passwd.
+I found the **ctf_user** but I could not cd into this directory even with sudo. I decided to list the files using sudo and was able to find the flag.txt which i ```sudo cat /home/flag_user/.profile``` and found the challenge 4 flag.
+
+
+
+
