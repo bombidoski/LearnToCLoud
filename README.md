@@ -1,4 +1,4 @@
-# LearnToCLoud
+# LearnToCloud
 Documenting my journey through LTC. LTC is a GUIDE that outlines the skills needed to learn Cloud Computing.
 
 
