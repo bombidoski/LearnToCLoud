@@ -1,92 +1,22 @@
-# LearnToCLou
+# LearnToCLoud
 Documenting my journey through LTC. LTC is a GUIDE that outlines the skills needed to learn Cloud Computing.
 
 
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+## LTC program
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+Welcome to my LearnToCloud journey! This repository serves as a comprehensive documentation of my progress through the resources available at [LearnToCloud Guide](https://learntocloud.guide). I will share my expereinces on projects I undertake as part of the program. the goal is to enhance my skills in cloud computing and related technologies.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/bombidoski/LearnToCLoud">
-    <img src="https://raw.githubusercontent.com/learntocloud/learn-to-cloud/refs/heads/main/img/cropped.svg" alt="Logo" width="480">
-  </a>
-<br />
-<br />
+## Contents
+* README: Where I document my hands-on projects or challenges I complete during the program.
 
-  <h3 align="center">LearnToCloud Journey Repository - Public</h3>
-
-<p align="center">
-    A public repository aimed at documenting my progress through the cloud training resources available at <a href="https://learntocloud.guide">LearnToCloud.Guide</a>.
-    <br />
-    <br />
-    <a href="https://github.com/bombidoski/LearnToCLoud/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/bombidoski/LearnToCLoud/issues">Request Feature</a>
-</p>
-</div>
-<br />
-<br />
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<!--[![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-
-Welcome to my LearnToCloud journey! This repository serves as a comprehensive documentation of my progress through the resources available at [LearnToCloud Guide](https://learntocloud.guide). It is designed for both personal recollection and accountability.
-
-I invite you to explore this repository and join me on this exciting journey to mastering cloud technologies. Your feedback and constructive criticism are highly appreciated as I strive to deepen my understanding of the tools and practices essential for cloud computing.
-
-Feel free to dive in and give it a try yourself!
-
-### Built With
+<!--### Built With
 
 - Git
 - Azure-CLI
 - Visual Studio Code
 - Markdown 
 - Terraform - IAC
-- WSL - (Windows Subsystems for Linux)
+- WSL - (Windows Subsystems for Linux)-->
 
 <!-- GETTING STARTED -->
 ## Getting Started
