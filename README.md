@@ -1,5 +1,5 @@
-# LearnToCLoud
-A repository for documenting my journey through LTC
+# LearnToCLou
+Documenting my journey through LTC. LTC is a GUIDE that outlines the skills needed to learn Cloud Computing.
 
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
