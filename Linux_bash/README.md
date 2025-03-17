@@ -65,6 +65,40 @@ tail -n 5 large_log_file.log`
 I used ```grep 1002 /etc/passwd``` to search for the UID 1002 in the /etc/passwd.
 I found the **ctf_user** but I could not cd into this directory even with sudo. I decided to list the files using sudo and was able to find the flag.txt which i ```sudo cat /home/flag_user/.profile``` and found the challenge 4 flag.
 
+## Challenge 5: The Permissive File
+
+**Objective:** Locate the file owned by root with permissions 777 and read its contents.
+
+**Skills tested:**
+
+- Understanding Linux file permissions
+- Using find command with permission parameters
+- Reading file contents as a non-root user
+
+I used the ```find ``` command to look for a file ```-type f``` from root ```/``` with full permissions ```-perm 777```. I then ```cat /opt/systems/config/system.conf``` the file and found the flag
+
+## Challenge 6: The Hidden Service
+
+**Objective:** Find the process running on port 8080 and retrieve the flag from its command.
+
+**Skills tested:**
+
+- Using network-related commands (netstat, ss, or lsof)
+- Understanding process information
+- Reading process details
+
+I used ```netstat``` to show any tcp/udp connections or listening sockets. then used grep to search through the output and find **:8080**. I retrieved the flag from `curl http://localhost:8080`
+
+## Challenge 7: The Encoded Secret
+
+**Objective:** Decode the base64 encoded flag in the 'encoded_flag.txt' file.
+
+**Skills tested:**
+
+- Understanding of base64 encoding
+- Using command-line decoding tools
+
+I used ```find ~/.ssh -type f``` command to find the encoded file, then used `cat /home/ctf_user/.ssh/secrets/backup/.authorized_keys `
 
 
 
