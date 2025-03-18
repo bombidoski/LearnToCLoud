@@ -19,16 +19,13 @@ The application stack includes the following components:
 
 Each movie entry in the CosmosDB database follows this structure:
 ```json
-
-    {
-        'title': movie['title'],
-        'releaseYear': movie['release_date'].split('-')[0],
-        'genre': ', '.join(map(str, movie['genre_ids'])),  # Optionally map genre IDs to genre names
-        'coverUrl': f"https://image.tmdb.org/t/p/w500{movie['poster_path']}"
-    }
-
+{
+    "title": movie["title"],
+    "releaseYear": movie["release_date"].split("-")[0],
+    "genre": ", ".join(map(str, movie["genre_ids"])),  // Optionally map genre IDs to genre names
+    "coverUrl": f"https://image.tmdb.org/t/p/w500{movie["poster_path"]}"
+}
 ```
-
 
 ## Endpoints
 
