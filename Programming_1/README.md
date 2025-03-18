@@ -7,8 +7,7 @@ This project is a serverless REST API for retrieving information about popular m
 The Popular movies API allows clients to:
 1. Retrieve a list of all movies including titles, releaseyeaer, genre and cover images.
 
-
-## Infrastructure
+<!-- ## Infrastructure
 
 The application stack includes the following components:
 - **Azure Functions**: serverless compute service to host Python functions (GetMovies) and enable an API interface.
@@ -81,4 +80,4 @@ Each album entry in the DynamoDB database follows this structure:
  
     Examples:
          https://api.shoiyan.com/getalbums
-         https://api.shoiyan.com/getalbumsbyyear/year
+         https://api.shoiyan.com/getalbumsbyyear/year  
