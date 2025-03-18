@@ -5,79 +5,57 @@ This project is a serverless REST API for retrieving information about popular m
 ## Project Overview
 
 The Popular movies API allows clients to:
-1. Retrieve a list of all movies including titles, releaseyeaer, genre and cover images.
+1. Retrieve a list of all movies including titles, releaseyear, genre and cover images.
 
-<!-- ## Infrastructure
+ ## Infrastructure
 
 The application stack includes the following components:
 - **Azure Functions**: serverless compute service to host Python functions (GetMovies) and enable an API interface.
-- **S3**: Stores cover images for each album.
-- **Lambda**: Serverless functions that handle API requests.
-- **API Gateway**: Exposes API endpoints to interact with Lambda functions.
+- **Azure Cosmos DB (with MongoDB API)**: Stored the movie data fetched from TMDB in Cosmos DB using its MongoDB compatibility..
+- **Azure Blob Storage**: Stored the movie cover images fetched from TMDB..
+- **Azure Functions**: Processed API requests (GetMovies), Interacted with Cosmos DB, and Blob Storage to handle data processing and retrieval..
 
 ## Data Model
 
-Each album entry in the DynamoDB database follows this structure:
+Each movie entry in the CosmosDB database follows this structure:
 ```json
-{
-    "album_id": "unique-album-id",
-    "title": "Album Title",
-    "artist": "Artist Name",
-    "genre": "Genre",
-    "release_year": "Year of Release",
-    "cover_url": "https://s3.amazonaws.com/your-bucket-name/album-cover.jpg"
-}
+
+    {
+        'title': movie['title'],
+        'releaseYear': movie['release_date'].split('-')[0],
+        'genre': ', '.join(map(str, movie['genre_ids'])),  # Optionally map genre IDs to genre names
+        'coverUrl': f"https://image.tmdb.org/t/p/w500{movie['poster_path']}"
+    }
+
 ```
 
 
 ## Endpoints
 
-1. **GET /getalbums**
+1. **GetMovies**
 
     **Description**: Retrieves a list of all music albums.  
-    **Response**: Returns an array of albums, each with title, artist, genre, release_year, and cover_url.
+    **Response**: Returns an array of movies, each with titles, releaseYear, genre and cover cover_url.
 
     **Example response**:
     ```json
     [
         {
-            "title": "Abbey Road",
-            "artist": "The Beatles",
-            "genre": "Rock",
-            "release_year": "1969",
-            "cover_url": "https://s3.amazonaws.com/your-bucket-name/abbey-road.jpg"
+            "title": "The Gorge",
+            "releaseYear": "2025",
+            "genre": "10749, 878, 53",
+            "coverUrl": "https://image.tmdb.org/t/p/w500/7iMBZzVZtG0oBug4TfqDb9ZxAOa.jpg"
         },
         {
-            "title": "Thriller",
-            "artist": "Michael Jackson",
-            "genre": "Pop",
-            "release_year": "1982",
-            "cover_url": "https://s3.amazonaws.com/your-bucket-name/thriller.jpg"
-        }
-    ]
-    ```
-
-2. **GET /albumsbyyear/{year}**
-
-    **Description**: Retrieves albums released in a specific year.  
-    **Path Parameter**: `year` – The release year of albums you want to retrieve.  
-    **Response**: Returns an array of albums that match the specified release year.
-
-    **Example response for /albums/1982**:
-    ```json
-    [
-        {
-            "title": "Thriller",
-            "artist": "Michael Jackson",
-            "genre": "Pop",
-            "release_year": "1982",
-            "cover_url": "https://s3.amazonaws.com/your-bucket-name/thriller.jpg"
-        }
+            "title": "Flight Risk",
+            "releaseYear": "2025",
+            "genre": "28, 53, 80",
+            "coverUrl": "https://image.tmdb.org/t/p/w500/q0bCG4NX32iIEsRFZqRtuvzNCyZ.jpg"
+        },
     ]
     ```
 
 ## Usage
  
     Examples:
-         https://api.shoiyan.com/getalbums
-         https://api.shoiyan.com/getalbumsbyyear/year  
+         http://localhost:7071/api/GetMovies
