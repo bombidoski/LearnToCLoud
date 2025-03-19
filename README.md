@@ -20,7 +20,7 @@ Welcome to my LearnToCloud journey! This repository serves as a comprehensive do
 
 <!-- GETTING STARTED -->
 ## Getting Started
-* Feel free to go through the diffrent project folders to see the work I have completed. Each folder contains a README with detailed explanation of thep roject, along with the code and resources used.
+* Feel free to go through the diffrent project folders to see the work I have completed. Each folder contains a README with detailed explanation of the project, along with the code and resources used.
 
 <!-- CONTACT -->
 ## Contact
