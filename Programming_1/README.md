@@ -29,7 +29,7 @@ Each movie entry in the CosmosDB database follows this structure:
 
 ## Endpoints
 
-1. **GetMovies**
+1. **GET/GetMovies**
 
     **Description**: Retrieves a list of all music albums.  
     **Response**: Returns an array of movies, each with titles, releaseYear, genre and cover cover_url.
